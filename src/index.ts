@@ -8,8 +8,6 @@ export { getLoopedRange } from './lib/getLoopedRange';
 export { getRangeDuration } from './lib/getRangeDuration';
 export { getWrappedRanges } from './lib/getWrappedRanges';
 export { isInRange } from './lib/isInRange';
-// TODO: not generic, remove??
-export { isTimeInRange } from './lib/isTimeInRange';
 export { moveRange } from './lib/moveRange';
 export { setEnd } from './lib/setEnd';
 export { setStart } from './lib/setStart';

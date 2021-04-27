@@ -1,10 +1,9 @@
 import type { Range } from './types';
 
 // generic because we are keeping any extra properties from range
-export const setStart = <P extends number, T extends Range<P>>(range: T, start: P): T => {
+export const setStart = < T extends Range<number>>(range: T, start: number): T => {
   return {
-    ...range,
     start,
     end: Math.max(range.end, start),
-  };
+  }as T;
 };
