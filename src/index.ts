@@ -1,5 +1,4 @@
 export { addToRange } from './lib/addToRange';
-// TODO: rename file, also make entire lib generic (allow opaque types but don't tie with BeatsRange)
 export { createRange } from './lib/createRange';
 export { clampRange } from './lib/clampRange';
 export { createRangeFromDuration } from './lib/createRangeFromDuration';
