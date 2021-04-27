@@ -1,4 +1,7 @@
 {
+  "name": "range-fns",
+  "author": "Juan Terraciano",
+  "keywords": ["range","functional"],
   "version": "0.1.0",
   "license": "MIT",
   "main": "dist/index.js",
@@ -19,9 +22,6 @@
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
-  "peerDependencies": {
-    "react": ">=16"
-  },
   "husky": {
     "hooks": {
       "pre-commit": "tsdx lint"
@@ -39,8 +39,6 @@
     "jsxSingleQuote": true,
     "arrowParens": "always"
   },
-  "name": "range-fns",
-  "author": "Gustavo Spredemann",
   "module": "dist/range-fns.esm.js",
   "size-limit": [
     {
