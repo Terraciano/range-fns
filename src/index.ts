@@ -9,6 +9,6 @@ export { isInRange } from './lib/isInRange';
 export { moveRange } from './lib/moveRange';
 export { setEnd } from './lib/setEnd';
 export { setStart } from './lib/setStart';
-export { splitRange } from './lib/splitRange';
+export { split } from './lib/split';
 export { splitRangeByDuration } from './lib/splitRangeByDuration';
 export { subtractFromRange } from './lib/subtractFromRange';
