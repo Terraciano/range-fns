@@ -1,6 +1,6 @@
 import type { Range } from './types';
 
-export const getRangeDifference = <T extends number>(range: Range<T>): T => {
+export const getDifference = <T extends number>(range: Range<T>): T => {
   return (range.end - range.start) as T;
 };
 

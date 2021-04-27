@@ -4,7 +4,7 @@ export { clampRange } from './lib/clampRange';
 export { createRangeFromDuration } from './lib/createRangeFromDuration';
 export { getItemsInRange } from './lib/getItemsInRange';
 export { getLoopedRange } from './lib/getLoopedRange';
-export { getRangeDifference } from './lib/getRangeDifference';
+export { getDifference } from './lib/getDifference';
 export { isInRange } from './lib/isInRange';
 export { moveRange } from './lib/moveRange';
 export { setEnd } from './lib/setEnd';
