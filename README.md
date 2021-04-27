@@ -1,28 +1,27 @@
-Tagline of up to 20 words here
 
 ## Motivation
 
-Single paragraph about why this library exists
+Functional library for working with numerical ranges in TS
 
 ## Get started
 
 Install
 
 ```bash
-npm install --save library-name-fns
+npm install --save range-fns
 # or
-yarn add library-name-fns
+yarn add range-fns
 ```
 
 Use
 
 ```typescript
-import { noop } from 'library-name-fns'
+import { noop } from 'range-fns'
 
 console.log(noop()) // undefined
 ```
 
-[Examples](https://github.com/skulptur/library-name-fns/tree/master/example)
+[Examples](https://github.com/skulptur/range-fns/tree/master/example)
 
 ## API
 
