@@ -1,4 +1,4 @@
-import { getRangeDuration } from './getRangeDuration';
+import { getDifference } from './getDifference';
 import type { Range } from './types';
 
 // might clamp to an invalid duration, so might return null
@@ -11,6 +11,6 @@ export const clampRange = <T extends number>(
     end: Math.min(range.end, rangeLimit.end) as T,
   };
 
-  const duration = getRangeDuration(newRange);
+  const duration = getDifference(newRange);
   return duration > 0 ? newRange : null;
 };
