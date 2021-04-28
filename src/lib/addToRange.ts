@@ -9,7 +9,7 @@ export const addToRange = <T extends Range<number>>(range: T, offsetBy: number):
 };
 
 /*
-* Creates a range from the provided arguments
+* Returns a new range adding an offset to an existing range
 * const myRange = createRange(5, 10);
 *
 * console.log(addToRange(myRange, 10))  // {start: 15, end: 20}
