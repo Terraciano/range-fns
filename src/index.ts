@@ -5,7 +5,7 @@ export { createRangeFromDuration } from './lib/createRangeFromDuration';
 export { getItemsInRange } from './lib/getItemsInRange';
 export { getLoopedRange } from './lib/getLoopedRange';
 export { getDifference } from './lib/getDifference';
-export { isInRange } from './lib/isInRange';
+export { intersection } from './lib/intersection';
 export { moveRange } from './lib/moveRange';
 export { setEnd } from './lib/setEnd';
 export { setStart } from './lib/setStart';
