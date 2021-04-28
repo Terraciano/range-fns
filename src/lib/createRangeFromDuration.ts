@@ -12,3 +12,10 @@ export const createRangeFromDuration = <T extends number>(
     end,
   };
 };
+
+/*
+* Creates a range from a given duration
+*
+* console.log(createRange<number>(2,6))  // {start: 6, end: 8 }
+*
+* */
