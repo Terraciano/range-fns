@@ -9,6 +9,6 @@ export const getDifference = <T extends number>(range: Range<T>): T => {
 *
 ** const myRange = createRange(5, 10);
 *
-* console.log(getRangeDifference(myRange))  // 5
+* console.log(getDifference(myRange))  // 5
 *
 * */
