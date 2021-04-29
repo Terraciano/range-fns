@@ -12,3 +12,5 @@ export { setStart } from './lib/setStart';
 export { split } from './lib/split';
 export { splitRangeByDuration } from './lib/splitRangeByDuration';
 export { subtractFromRange } from './lib/subtractFromRange';
+export { getValuesFromRange } from './lib/getValuesFromRange';
+export { getIntersection } from './lib/getIntersection';
