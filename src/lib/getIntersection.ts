@@ -10,10 +10,10 @@
 */
 
 import type {Range} from './types'
-import {getValuesFromRange} from "./getValuesFromRange";
+import {getRangeValues} from "./getRangeValues";
 
 export const getIntersection = <T extends number>(rangeA:Range<T>,rangeB:Range<T>) =>{
-    return getValuesFromRange(rangeA).filter(element => getValuesFromRange(rangeB).indexOf(element) !== -1)
+    return getRangeValues(rangeA).filter(element => getRangeValues(rangeB).indexOf(element) !== -1)
 }
 
 
