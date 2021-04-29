@@ -13,7 +13,7 @@
 
 import type { Range } from './types';
 
-export const intersection = <T extends number>(rangeA: Range<T>, rangeB: Range<T>) => {
+export const hasIntersection = <T extends number>(rangeA: Range<T>, rangeB: Range<T>) => {
   // todo: btw this implies that starts are before the end, which might not be the case
   return !(rangeA.end <= rangeB.start || rangeA.start >= rangeB.end);
 };
