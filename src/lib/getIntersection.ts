@@ -1,11 +1,4 @@
-import type {Range} from './types'
-import {getValuesFromRange} from "./getValuesFromRange";
-
-export const getIntersection = <T extends number>(rangeA:Range<T>,rangeB:Range<T>) =>{
-    return getValuesFromRange(rangeA).filter(element => getValuesFromRange(rangeB).indexOf(element) !== -1)
-}
-
-/*
+/**
 * Returns an array containing the intersection of two ranges
 *
 * const firstRange = createRange(5, 10);
@@ -15,3 +8,12 @@ export const getIntersection = <T extends number>(rangeA:Range<T>,rangeB:Range<T
 *
 *
 */
+
+import type {Range} from './types'
+import {getValuesFromRange} from "./getValuesFromRange";
+
+export const getIntersection = <T extends number>(rangeA:Range<T>,rangeB:Range<T>) =>{
+    return getValuesFromRange(rangeA).filter(element => getValuesFromRange(rangeB).indexOf(element) !== -1)
+}
+
+

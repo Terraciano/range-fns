@@ -1,3 +1,13 @@
+/**
+* Returns a clamped range between two ranges passed, if invalid, returns null
+*
+* const myRange = createRange(5, 10);
+* const limitRange = createRange(2, 7);
+*
+* console.log(clampRange(myRange,limitRange)) // {"start": 5,"end": 7}
+*
+* */
+
 import { getDifference } from './getDifference';
 import type { Range } from './types';
 
@@ -14,12 +24,4 @@ export const clampRange = <T extends number>(
   return difference > 0 ? newRange : null;
 };
 
-/*
-* Returns a clamped range between two ranges passed, if invalid, returns null
-*
-* const myRange = createRange(5, 10);
-* const limitRange = createRange(2, 7);
-*
-* console.log(clampRange(myRange,limitRange)) // {"start": 5,"end": 7}
-*
-* */
+
