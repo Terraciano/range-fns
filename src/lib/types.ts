@@ -1,4 +1,1 @@
-export type Range<T extends number> = {
-  start: T;
-  end: T;
-};
+export type Range<T extends number> = [T,T]

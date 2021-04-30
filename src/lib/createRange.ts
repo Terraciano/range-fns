@@ -11,8 +11,8 @@
 import type { Range } from './types';
 
 export const createRange = <T extends number>(start: T, end: T): Range<T> => {
-  return {
+  return [
     start,
-    end,
-  } as Range<T>;
+    end
+  ] as Range<T>;
 };
