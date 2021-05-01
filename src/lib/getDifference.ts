@@ -10,7 +10,7 @@
 import type { Range } from './types';
 
 export const getDifference = <T extends number>(range: Range<T>): T => {
-  return (range.end - range.start) as T;
+  return (range[1] - range[0]) as T;
 };
 
 

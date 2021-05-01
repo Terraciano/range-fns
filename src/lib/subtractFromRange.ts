@@ -6,7 +6,7 @@ export const subtractFromRange = <P extends number, T extends Range<P>>(
 ): T => {
   return {
     ...range,
-    start: range.start - offsetBy,
-    end: range.end - offsetBy,
+    start: range[0] - offsetBy,
+    end: range[1] - offsetBy,
   };
 };

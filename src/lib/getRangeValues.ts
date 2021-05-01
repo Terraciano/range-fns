@@ -12,6 +12,6 @@ import type {Range} from "./types";
 import {getDifference} from "./getDifference";
 
 export const getRangeValues = <T extends number> (range:Range<T>, limit=0 as T)=>{
-    return Array(limit ? limit : getDifference(range) + 1).fill(0).map((_, idx) => range.start + idx) as Array<T>
+    return Array(limit ? limit : getDifference(range) + 1).fill(0).map((_, idx) => range[0] + idx) as Array<T>
 }
 

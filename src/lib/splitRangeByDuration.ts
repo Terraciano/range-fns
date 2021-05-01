@@ -5,5 +5,5 @@ export const splitRangeByDuration = <T extends number>(
   range: Range<T>,
   duration: T,
 ): Array<Range<T>> => {
-  return split(range, (range.start + duration) as T);
+  return split(range, (range[0] + duration) as T);
 };

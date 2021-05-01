@@ -7,5 +7,5 @@ import type { Range } from './types';
 export const getLoopedRange = <T extends number>(range: Range<T>, loops: number): Range<T> => {
   const times = Math.max(0, loops + 1);
   const newDuration = (getDifference(range) * times) as T;
-  return createRangeFromDuration(newDuration, range.start);
+  return createRangeFromDuration(newDuration, range[0]);
 };

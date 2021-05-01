@@ -15,6 +15,6 @@ import type { Range } from './types';
 
 export const hasIntersection = <T extends number>(rangeA: Range<T>, rangeB: Range<T>) => {
   // todo: btw this implies that starts are before the end, which might not be the case
-  return !(rangeA.end <= rangeB.start || rangeA.start >= rangeB.end);
+  return !(rangeA[1] <= rangeB[0] || rangeA[0] >= rangeB[1]);
 };
 

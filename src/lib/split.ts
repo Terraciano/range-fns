@@ -1,17 +1,17 @@
 import type { Range } from './types';
 
 export const split = <T extends number>(range: Range<T>, splitAt: T): Array<Range<T>> => {
-  const isBetween = range.start < splitAt && range.end > splitAt;
+  const isBetween = range[0] < splitAt && range[1] > splitAt;
 
   return isBetween
     ? [
         {
-          start: range.start,
+          start: range[0],
           end: splitAt,
         },
         {
           start: splitAt,
-          end: range.end,
+          end: range[1],
         },
       ]
     : [range];

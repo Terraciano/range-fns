@@ -15,10 +15,10 @@ export const clampRange = <T extends number>(
   range: Range<T>,
   rangeLimit: Range<T>,
 ): Range<T> | null => {
-  const newRange: Range<T> = {
-    start: Math.max(range.start, rangeLimit.start) as T,
-    end: Math.min(range.end, rangeLimit.end) as T,
-  };
+  const newRange: Range<T> = [
+    Math.max(range[0], rangeLimit[0]) as T,
+     Math.min(range[1], rangeLimit[1]) as T,
+  ];
 
   const difference = getDifference(newRange);
   return difference > 0 ? newRange : null;
