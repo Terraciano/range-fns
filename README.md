@@ -18,7 +18,7 @@ Use
 ```typescript
 import {createRange} from "range-fns";
 
-console.log(createRange(0,1)) // {start:0, end:1}
+console.log(createRange(0,1)) // [0,1]
 ```
 
 Different examples can be found on each function
