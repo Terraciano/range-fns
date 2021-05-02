@@ -6,7 +6,6 @@
 *
 * console.log(getIntersectionValues(firstRange,secondRange))  // [7,8,9,10]
 *
-*
 */
 
 import type {Range} from './types'

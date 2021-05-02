@@ -3,7 +3,7 @@
  *
 * Creates a range from the provided arguments
 *
-* console.log(createRange<number>(5,10))  // {start: 5, end: 10}
+* console.log(createRange<number>(5,10))  // [5,10]
 *
 * */
 

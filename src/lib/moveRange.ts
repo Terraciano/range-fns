@@ -4,8 +4,5 @@ import type { Range } from './types';
 export const moveRange = <T extends number>(range: Range<T>, newStart: T): Range<T> => {
   const difference = newStart - range[0];
 
-  return {
-    start: range[0] + difference,
-    end: range[1] + difference,
-  } as Range<T>;
+  return [range[0]+difference,range[1]+difference] as Range<T>;
 };

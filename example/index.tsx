@@ -1,15 +1,13 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
-import {getRangeValues} from "../src/lib/getRangeValues";
-import {createRange, getDifference} from "../src";
+import { createRange, moveRange} from "../src";
 
-const myRange = createRange(5,10)
-const secondRange = createRange(8,20)
+const myRange = createRange<number>(5,10)
 
 const App = () => {
     return (
         <div>
-            {JSON.stringify(getRangeValues(myRange))}
+            {JSON.stringify(moveRange(myRange,10))}
         </div>
     )
 }

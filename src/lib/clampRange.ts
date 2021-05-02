@@ -4,7 +4,7 @@
 * const myRange = createRange(5, 10);
 * const limitRange = createRange(2, 7);
 *
-* console.log(clampRange(myRange,limitRange)) // {"start": 5,"end": 7}
+* console.log(clampRange(myRange,limitRange)) // [5, 7]
 *
 * */
 

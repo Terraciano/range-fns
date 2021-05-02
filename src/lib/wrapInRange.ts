@@ -1,6 +1,7 @@
-export const wrapInRange = (
-  value: number,
-  { start, end }: { start: number; end: number },
+import {Range} from "./types";
+
+export const wrapInRange =<T extends number>(
+  value: number,range:Range<T>,
 ): number => {
-  return start + ((value - start) % (end - start));
+  return range[0] + ((value - range[0]) % (range[1] - range[0]));
 };
