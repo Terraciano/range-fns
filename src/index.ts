@@ -12,3 +12,7 @@ export { setStart } from './lib/setStart';
 export { split } from './lib/split';
 export { splitRangeByDuration } from './lib/splitRangeByDuration';
 export { subtractFromRange } from './lib/subtractFromRange';
+export {toObject} from './lib/toObject'
+export {fromObject} from './lib/fromObject'
+export {getExclusion} from './lib/getExclusion'
+export type {Range,RangeObject} from './lib/types'
